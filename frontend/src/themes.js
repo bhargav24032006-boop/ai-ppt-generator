@@ -1,0 +1,102 @@
+export const THEMES = [
+  {
+    id: "google-gemini",
+    name: "Gemini Aura",
+    description: "Deep obsidian slate with electric indigo & cyan glow",
+    darkMode: true,
+    bgColor: "#0B0F19",
+    cardBg: "#161D2F",
+    cardBorder: "rgba(99, 102, 241, 0.25)",
+    textPrimary: "#F8FAFC",
+    textSecondary: "#94A3B8",
+    accentPrimary: "#6366F1",
+    accentSecondary: "#06B6D4",
+    badgeBg: "#1E293B",
+    fontFamily: "'Inter', system-ui, sans-serif",
+    gradient: "linear-gradient(135deg, #0B0F19 0%, #161D2F 100%)"
+  },
+  {
+    id: "modern-dark",
+    name: "Modern Titanium",
+    description: "Sleek graphite dark mode with blue and emerald highlights",
+    darkMode: true,
+    bgColor: "#121316",
+    cardBg: "#1C1E24",
+    cardBorder: "rgba(59, 130, 246, 0.25)",
+    textPrimary: "#F9FAFB",
+    textSecondary: "#9CA3AF",
+    accentPrimary: "#3B82F6",
+    accentSecondary: "#10B981",
+    badgeBg: "#272A34",
+    fontFamily: "'Inter', system-ui, sans-serif",
+    gradient: "linear-gradient(135deg, #121316 0%, #1C1E24 100%)"
+  },
+  {
+    id: "corporate-clean",
+    name: "Executive Clean",
+    description: "Crisp editorial white with commanding royal navy",
+    darkMode: false,
+    bgColor: "#FFFFFF",
+    cardBg: "#F8FAFC",
+    cardBorder: "rgba(30, 58, 138, 0.15)",
+    textPrimary: "#0F172A",
+    textSecondary: "#475569",
+    accentPrimary: "#1E3A8A",
+    accentSecondary: "#2563EB",
+    badgeBg: "#EEF2F6",
+    fontFamily: "'Inter', system-ui, sans-serif",
+    gradient: "linear-gradient(135deg, #FFFFFF 0%, #F1F5F9 100%)"
+  },
+  {
+    id: "emerald-tech",
+    name: "Tech Emerald",
+    description: "Deep midnight forest green with high-tech mint glow",
+    darkMode: true,
+    bgColor: "#022C22",
+    cardBg: "#064E3B",
+    cardBorder: "rgba(16, 185, 129, 0.25)",
+    textPrimary: "#F0FDF4",
+    textSecondary: "#A7F3D0",
+    accentPrimary: "#10B981",
+    accentSecondary: "#34D399",
+    badgeBg: "#043D2F",
+    fontFamily: "'Inter', system-ui, sans-serif",
+    gradient: "linear-gradient(135deg, #022C22 0%, #064E3B 100%)"
+  },
+  {
+    id: "sunset-gradient",
+    name: "Sunset Horizon",
+    description: "Warm charcoal with radiant rose and glowing amber",
+    darkMode: true,
+    bgColor: "#18181B",
+    cardBg: "#27272A",
+    cardBorder: "rgba(244, 63, 94, 0.25)",
+    textPrimary: "#FAFAFA",
+    textSecondary: "#A1A1AA",
+    accentPrimary: "#F43F5E",
+    accentSecondary: "#F59E0B",
+    badgeBg: "#3F3F46",
+    fontFamily: "'Inter', system-ui, sans-serif",
+    gradient: "linear-gradient(135deg, #18181B 0%, #27272A 100%)"
+  },
+  {
+    id: "luxury-gold",
+    name: "Royal Onyx",
+    description: "Refined dark obsidian with warm champagne gold and ivory",
+    darkMode: true,
+    bgColor: "#0F0F11",
+    cardBg: "#1C1C22",
+    cardBorder: "rgba(217, 119, 6, 0.25)",
+    textPrimary: "#FDF8F6",
+    textSecondary: "#D1D5DB",
+    accentPrimary: "#D97706",
+    accentSecondary: "#F59E0B",
+    badgeBg: "#292524",
+    fontFamily: "'Georgia', serif",
+    gradient: "linear-gradient(135deg, #0F0F11 0%, #1C1C22 100%)"
+  }
+];
+
+export const getThemeById = (id) => {
+  return THEMES.find((t) => t.id === id) || THEMES[0];
+};

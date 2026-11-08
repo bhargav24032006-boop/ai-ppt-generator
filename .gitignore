@@ -1,0 +1,50 @@
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# Environment variables & secrets (NEVER commit API keys)
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Generated PowerPoint & Image Artifacts
+backend/generated_decks/*.pptx
+backend/generated_decks/*.pdf
+backend/generated_decks/*.zip
+backend/generated_decks/images/*.png
+backend/generated_decks/images/*.jpg
+backend/generated_decks/slide_renders/
+backend/generated_decks/cache/
+backend/storage/decks/
+backend/storage/images/
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Logs & OS files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
